@@ -1,0 +1,89 @@
+[436613855]      [C_CSL:C_CSL] Transition Effect: Initial_760__TO__NOCOMMS_3000
+[436613876]      [C_CSL:C_CSL] Entry Behavior: C_CSL_NOCOMMS
+[436613883]      [C_CSL:C_CSL] Do Behavior: C_CSL_NOCOMMS
+[436613923]      [I_SAI:SAI] Transition Effect: Initial_157__TO__Stub_255
+[436613926]      [I_SAI:SAI] Entry Behavior: SAI_Stub
+[436613929]      [I_SAI:SAI] Do Behavior: SAI_Stub
+[436613932]      [C_SAI:SAI] Transition Effect: Initial_157__TO__Stub_255
+[436613935]      [C_SAI:SAI] Entry Behavior: SAI_Stub
+[436613938]      [C_SAI:SAI] Do Behavior: SAI_Stub
+[436613953]      [C_RBC_USER:RBC_USER] Transition Effect: Initial_179__TO__Stub_205
+[436613957]      [C_RBC_USER:RBC_USER] Entry Behavior: RBC_USER_Stub
+[436613960]      [C_RBC_USER:RBC_USER] Do Behavior: RBC_USER_Stub
+[436613989]      [I_CSL:I_CSL] Transition Effect: Initial_168__TO__NOCOMMS_229
+[436613997]      [I_CSL:I_CSL] Entry Behavior: I_CSL_NOCOMMS
+[436614001]      [I_CSL:I_CSL] Do Behavior: I_CSL_NOCOMMS
+[436614005]      [I_RBC_USER:RBC_USER] Transition Effect: Initial_179__TO__Stub_205
+[436614008]      [I_RBC_USER:RBC_USER] Entry Behavior: RBC_USER_Stub
+[436614013]      [I_RBC_USER:RBC_USER] Do Behavior: RBC_USER_Stub
+[436614032]      [TIMER:TIMER] Transition Effect: Initial_829__TO__State1_3028
+[436614035]      [TIMER:TIMER] Entry Behavior: TIMER_State1
+[436614039]      [TIMER:TIMER] Do Behavior: TIMER_State1
+[436617402]      [C_CSL:C_CSL] Completion: C_CSL_C_CSL_NOCOMMS
+[436617427]      [I_SAI:SAI] Completion: SAI_SAI_Stub
+[436617432]      [C_SAI:SAI] Completion: SAI_SAI_Stub
+[436617436]      [C_RBC_USER:RBC_USER] Completion: RBC_USER_RBC_USER_Stub
+[436617440]      [I_CSL:I_CSL] Completion: I_CSL_I_CSL_NOCOMMS
+[436617444]      [I_RBC_USER:RBC_USER] Completion: RBC_USER_RBC_USER_Stub
+[436617447]      [TIMER:TIMER] Completion: TIMER_TIMER_State1
+[436619132]      Waiting for Trigger
+[436719409]      Command: send TICK to I_CSL
+[436719434]      [I_CSL:I_CSL] Event Queued: TICK
+[436721815]      [I_CSL:I_CSL] Event Dispatched: TICK
+[436721851]      [I_CSL:I_CSL] Exit Behavior: I_CSL_NOCOMMS
+[436721873]      [I_CSL:I_CSL] Transition Effect: NOCOMMS__TO__NOCOMMS_3010
+[436721910]      [TIMER:TIMER] Event Queued: OK_TICK
+[436721933]      [I_SAI:SAI] Event Queued: SAI_CONNECT_REQUEST
+[436721970]      [I_CSL:I_CSL] Entry Behavior: I_CSL_NOCOMMS
+[436721992]      [I_CSL:I_CSL] Do Behavior: I_CSL_NOCOMMS
+[436722029]      [TIMER:TIMER] Event Dispatched: OK_TICK
+[436722054]      [TIMER:TIMER] Transition Effect: State1__TO__State1_3030
+[436724471]      [I_SAI:SAI] Event Dispatched: SAI_CONNECT_REQUEST
+[436724493]      [I_SAI:SAI] Transition Effect: Stub__TO__Stub_344
+[436724529]      [I_CSL:I_CSL] Completion: I_CSL_I_CSL_NOCOMMS
+[436728869]      Waiting for Trigger
+[436747462]      Command: send SAI_CONNECT_CONFIRM to I_CSL
+[436747496]      [I_CSL:I_CSL] Event Queued: SAI_CONNECT_CONFIRM
+[436749822]      [I_CSL:I_CSL] Event Dispatched: SAI_CONNECT_CONFIRM
+[436749856]      [I_CSL:I_CSL] Exit Behavior: I_CSL_NOCOMMS
+[436749881]      [I_CSL:I_CSL] Transition Effect: NOCOMMS__TO__COMMS_3011
+[436749918]      [I_RBC_USER:RBC_USER] Event Queued: RBC_USER_CONNECT_INDICATION
+[436749940]      [I_CSL:I_CSL] Entry Behavior: I_CSL_COMMS
+[436749977]      [I_CSL:I_CSL] Do Behavior: I_CSL_COMMS
+[436750002]      [I_RBC_USER:RBC_USER] Event Dispatched: RBC_USER_CONNECT_INDICATION
+[436750037]      [I_RBC_USER:RBC_USER] Transition Effect: Stub__TO__Stub_206
+[436752420]      [I_CSL:I_CSL] Completion: I_CSL_I_CSL_COMMS
+[436754323]      Waiting for Trigger
+[436766903]      Command: send TICK to I_CSL
+[436766924]      [I_CSL:I_CSL] Event Queued: TICK
+[436769319]      [I_CSL:I_CSL] Event Dispatched: TICK
+[436769350]      [I_CSL:I_CSL] Exit Behavior: I_CSL_COMMS
+[436769362]      [I_CSL:I_CSL] Transition Effect: COMMS__TO__COMMS_242
+[436769377]      [TIMER:TIMER] Event Queued: OK_TICK
+[436769386]      [I_CSL:I_CSL] Entry Behavior: I_CSL_COMMS
+[436769396]      [I_CSL:I_CSL] Do Behavior: I_CSL_COMMS
+[436769404]      [TIMER:TIMER] Event Dispatched: OK_TICK
+[436769414]      [TIMER:TIMER] Transition Effect: State1__TO__State1_3030
+[436771707]      [I_CSL:I_CSL] Completion: I_CSL_I_CSL_COMMS
+[436773501]      Waiting for Trigger
+[436778965]      Command: send SAI_DATA_INDICATION.sig_sai(LifeSign,nodata) to I_CSL
+[436779028]      [I_CSL:I_CSL] Event Queued: SAI_DATA_INDICATION.sig_sai(mtype:LifeSign, udata:nodata)
+[436781444]      [I_CSL:I_CSL] Event Dispatched: SAI_DATA_INDICATION.sig_sai(mtype:LifeSign, udata:nodata)
+[436781472]      [I_CSL:I_CSL] Exit Behavior: I_CSL_COMMS
+[436781484]      [I_CSL:I_CSL] Transition Effect: COMMS__TO__COMMS_239
+[436781502]      [I_CSL:I_CSL] Entry Behavior: I_CSL_COMMS
+[436781512]      [I_CSL:I_CSL] Do Behavior: I_CSL_COMMS
+[436783781]      [I_CSL:I_CSL] Completion: I_CSL_I_CSL_COMMS
+[436785548]      Waiting for Trigger
+[436790888]      Command: send TICK to I_CSL
+[436790913]      [I_CSL:I_CSL] Event Queued: TICK
+[436793288]      [I_CSL:I_CSL] Event Dispatched: TICK
+[436793313]      [I_CSL:I_CSL] Exit Behavior: I_CSL_COMMS
+[436793347]      [I_CSL:I_CSL] Transition Effect: COMMS__TO__COMMS_242
+[436793351]      [TIMER:TIMER] Event Queued: OK_TICK
+[436793387]      [I_CSL:I_CSL] Entry Behavior: I_CSL_COMMS
+[436793412]      [I_CSL:I_CSL] Do Behavior: I_CSL_COMMS
+[436793449]      [TIMER:TIMER] Event Dispatched: OK_TICK
+[436793469]      [TIMER:TIMER] Transition Effect: State1__TO__State1_3030
+[436795853]      [I_CSL:I_CSL] Completion: I_CSL_I_CSL_COMMS
+[436797762]      Waiting for Trigger
